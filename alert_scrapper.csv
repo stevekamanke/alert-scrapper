@@ -1,0 +1,31 @@
+name,description,panel,dashboard
+Status Updates Received alert,"No status update received from MrD (TEST MESSAGE, REDUCE THRESHOLD FOR LIVE ONE)",Status Updates Received (MRD),chef-mrd.json
+MrD Errors last 3 minutes alert,,MrD Errors last 3 minutes,chef-mrd.json
+MRD Response Alert,MRD Response  Time is Above Threshold,MRD Response Times,chef-mrd.json
+Paygate Duplicate Debits alert,Paygate Duplicate Debits is over threshold,Paygate Duplicate Debits,payment-provider-stuffs.json
+Logfire incoming message issue,Possible message outage,Logfire message outages,chef-overview.json
+Status Updates Received alert,"No status update received from MrD (TEST MESSAGE, REDUCE THRESHOLD FOR LIVE ONE)",Status Updates Received (MRD),chef-overview.json
+MrD Errors last 3 minutes alert,,MrD Errors last 3 minutes,chef-overview.json
+MRD Response Alert,MRD Response Time is Above Threshold,MRD Response Times,chef-overview.json
+3DS success rate,Auth settle success rate falling below threshold,Credit Card Auth Settle Attempts,chef-overview.json
+PayGate VS Bidvest VS Absa Failures Rate Alert,"BIDVEST / PAYGATE / ABSA Failed Percentage is too high. More info:
+https://grafana.office.ohsuper.com/d/GqCSgY9mz/chef-overview?orgId=1&fullscreen&panelId=35",PayGate VS Bidvest VS Absa Failures Rate,chef-overview.json
+PayGate Credit Card Abandoned Rate Alert,"PayGate Credit Card Abandoned Rate is too high. More Info: 
+https://grafana.office.ohsuper.com/d/GqCSgY9mz/chef-overview?orgId=1&fullscreen&panelId=33",PayGate Credit Card Abandoned Rate,chef-overview.json
+PayU Failures /  Abandoned Rate alert,"PayU PayU Failures or Abandoned Rate is high. More Info: 
+https://grafana.office.ohsuper.com/d/GqCSgY9mz/chef-overview?orgId=1&fullscreen&panelId=41",PayU Failures /  Abandoned Rate,chef-overview.json
+Undelivered pubsub messages alert,,Undelivered pubsub messages,adaptris.json
+Adaptris queue message counts alert,,Adaptris queue message counts,adaptris.json
+POs with multiple shipments,@bertus,POs with multiple shipments,logistics-alerts.json
+Logfire Message queue climbing,,Process Logfire Message Queue,logistics-alerts.json
+UPs ATS - ATB alert,UP total available to buy is drifting from available to sell,UPs ATS - ATB,logistics-alerts.json
+Logfire incoming message issue,Possible message outage,message outages,logfire-incoming.json
+MrD Events alert,"Check if `superbalist-api-ps-consumer-mrd` pod is running.
+
+```
+kubeprod get po -lconsumes=superbalist_api.integration_mrd 
+
+# to scale up this consumer
+kubeprod scale deploy superbalist-api-ps-consumer-mrd --replicas=2
+
+```",MrD Events,hooks.json
